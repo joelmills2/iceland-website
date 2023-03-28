@@ -55,11 +55,20 @@ body {
 }
 
 /*-----------------------------
-# introduction button
+# header
  -----------------------------*/
-.introduction {
+header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 670px;
+    margin-top: 40px;
+}
+
+header a {
     display: inline-block;
-    margin: 50px 1097px;
     bottom: 0;
     top: 0;
     left: 0;
