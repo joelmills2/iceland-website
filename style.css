@@ -112,7 +112,7 @@ header a:hover {
 .card {
     display: grid;
     grid-template-rows: 15rem 15rem;
-    grid-template-columns: 13rem 13rem 13rem;
+    grid-template-columns: 20rem 20rem;
     column-gap: 3rem;
     row-gap: 2.5rem;
     transition: transform 700ms cubic-bezier(.12,.87,.37,.97);
@@ -126,39 +126,23 @@ header a:hover {
     overflow: hidden;
 }
 .card:nth-child(1) {
-    background-image: url("images/basaltColumns.jpg");
+    background-image: url("images/mid-atlantic-ridge.jpg");
     background-position: center;
     background-size: cover;
 }
 .card:nth-child(2) {
-    background-image: url("images/mountain.jpg");
+    background-image: url("images/volcano.avif");
     background-position: center;
     background-size: cover;
 }
 .card:nth-child(3) {
-    background-image: url("images/fault.jpg");
+    background-image: url("images/glacier.jpg");
     background-position: center;
     background-size: cover;
 }
 .card:nth-child(4) {
     background-image: url("images/beach.jpeg");
     background-position: center;
-    background-size: cover;
-}
-.card:nth-child(5) {
-    /*
-    background-image: url("images/beach.jpeg");
-    background-position: center;
-     */
-    background-color: #013b01;
-    background-size: cover;
-}
-.card:nth-child(6) {
-    /*
-    background-image: url("images/beach.jpeg");
-    background-position: center;
-     */
-    background-color: #01095b;
     background-size: cover;
 }
 .card-title {
@@ -172,7 +156,9 @@ header a:hover {
 }
 .card-body {
     position: absolute;
-    padding: 2.4em 0 0;
+    padding: 45px 0 0;
+    text-align: center;
+    width: 250px;
     font-variant: all-petite-caps;
     font-family: "Optima", serif;
     font-weight: lighter;
@@ -199,34 +185,24 @@ header a:hover {
 }
 .card:nth-child(1):hover{
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/basaltColumns.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/mid-atlantic-ridge.jpg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 
 }
 .card:nth-child(2):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/mountain.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/volcano.avif");
+;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .card:nth-child(3):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/fault.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/glacier.jpg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .card:nth-child(4):hover {
     transform: scale(1.05) translateY(-1rem);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/beach.jpeg");
-    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-
-}
-.card:nth-child(5):hover {
-    transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) ;
-    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-.card:nth-child(6):hover {
-    transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) ;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -257,12 +233,6 @@ section:nth-child(5) {
     background-color: #c4dede;
 }
 section:nth-child(6) {
-    background-color: #c4dede;
-}
-section:nth-child(7) {
-    background-color: #c4dede;
-}
-section:nth-child(8) {
     background-color: #cfe5e4;
 }
 
