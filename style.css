@@ -42,15 +42,21 @@ body {
 /*-----------------------------
 # title section
  -----------------------------*/
-.title > h1{
+.title {
+    margin-top: 200px;
+    margin-left: 90px;
+}
+.title h1{
     position: relative;
     width: 390px;
-    font-size: 75px;
-    line-height: 80px;
+    font-size: 80px;
+    line-height: 85px;
     color: #4F4A41;
     font-family: "Georgia", sans-serif;
     font-weight: bold;
-    padding: 140px 70px
+}
+.title h1 span {
+    font-size: 65px;
 
 }
 
@@ -100,7 +106,7 @@ header a:hover {
     top: 0;
     left: 0;
     right: 0;
-    margin: 140px 550px;
+    margin: 170px 580px;
 }
 .card-group,
 .card {
@@ -193,34 +199,34 @@ header a:hover {
 }
 .card:nth-child(1):hover{
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)) , url("images/basaltColumns.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/basaltColumns.jpg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 
 }
 .card:nth-child(2):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)) , url("images/mountain.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/mountain.jpg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .card:nth-child(3):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)) , url("images/fault.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/fault.jpg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .card:nth-child(4):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)) , url("images/beach.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/beach.jpeg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 
 }
 .card:nth-child(5):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) ;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .card:nth-child(6):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) ;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
