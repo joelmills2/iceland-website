@@ -43,8 +43,8 @@ body {
 # title section
  -----------------------------*/
 .title {
-    margin-top: 200px;
-    margin-left: 90px;
+    margin-top: 220px;
+    margin-left: 100px;
 }
 .title h1{
     position: relative;
@@ -70,7 +70,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-left: 770px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 header a {
     bottom: 0;
@@ -141,7 +141,7 @@ header a:hover {
     background-size: cover;
 }
 .card:nth-child(4) {
-    background-image: url("images/beach.jpeg");
+    background-image: url("images/basalt.avif");
     background-position: center;
     background-size: cover;
 }
@@ -149,7 +149,7 @@ header a:hover {
     position: absolute;
     font-size: 30px;
     font-variant: all-petite-caps;
-    font-family: "Optima", serif;
+    font-family: "Georgia", serif;
     font-weight: lighter;
     padding: -3em 0 0;
     color: white;
@@ -202,7 +202,7 @@ header a:hover {
 }
 .card:nth-child(4):hover {
     transform: scale(1.05) translateY(-1rem);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/beach.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/basalt.avif");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -374,7 +374,7 @@ section:nth-child(6) {
     content: "";
     position: absolute;
     display: block;
-    width: 40px;
+    width: 60px;
     height: 3px;
     background-color: #353b3b;
     bottom: 0;
@@ -384,7 +384,7 @@ section:nth-child(6) {
     content: "";
     position: absolute;
     display: block;
-    width: 40px;
+    width:60px;
     height: 3px;
     background-color: #353b3b;
     bottom: 0;
