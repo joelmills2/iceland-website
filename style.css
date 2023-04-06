@@ -215,7 +215,7 @@ header a:hover {
  -----------------------------*/
 section
 {
-    padding: 40px 0;
+    padding: 20px 0;
     width: 100%;
     min-height: 90vh;
 }
@@ -284,7 +284,6 @@ section:nth-child(6) {
 .terms-refs {
     display: flex;
     flex-direction: row;
-
 }
 .terms {
     margin-left: 20px;
@@ -303,6 +302,14 @@ section:nth-child(6) {
     font-family: "Georgia", sans-serif;
     font-weight: bold;
 }
+.terms-title h2 span{
+    font-size: 18px;
+    position: relative;
+    color: var(--tertiary);
+    font-family: "Georgia", sans-serif;
+    font-weight: bold;
+}
+
 .terms-title h2:after {
     content: "";
     position: relative;
@@ -312,14 +319,15 @@ section:nth-child(6) {
     background-color: #353b3b;
 }
 .terms-text{
-    font-size: 17px;
-    margin-left: 60px;
+    font-size: 14px;
+    margin-left: 20px;
     padding-bottom: 20px;
     padding-right: 40px;
+    width: 600px;
     color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: lighter;
-    line-height: 22px;
+    line-height: 25px;
 }
 
 .refs-title {
@@ -342,14 +350,19 @@ section:nth-child(6) {
     background-color: #353b3b;
 }
 .refs-text{
-    font-size: 17px;
-    margin-left: 60px;
-    padding-bottom: 20px;
+    font-size: 12px;
+    margin-left: 30px;
+    padding-bottom: 15px;
     padding-right: 40px;
+    width: 650px;
     color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: lighter;
-    line-height: 22px;
+    line-height: 17px;
+}
+.refs-text a {
+    text-decoration: none;
+    color: var(--tertiary);
 }
 
 /*-----------------------------
@@ -405,8 +418,8 @@ section:nth-child(6) {
     margin-inline-start: 0;
     margin-inline-end: 0;
     margin-bottom: 0;
-    margin-left: 400px;
-    margin-right: 120px;
+    margin-left: 480px;
+    margin-right: 70px;
     font-size: 15px;
     line-height: 30px;
     padding-bottom: 100px;
@@ -420,8 +433,8 @@ section:nth-child(6) {
     margin-inline-start: 0;
     margin-inline-end: 0;
     margin-bottom: 0;
-    margin-left: 120px;
-    margin-right: 400px;
+    margin-left: 70px;
+    margin-right: 480px;
     font-size: 15px;
     line-height: 30px;
     padding-bottom: 100px;
@@ -433,46 +446,105 @@ section:nth-child(6) {
 # images
  -----------------------------*/
 .left-container {
-    width: 100%;
     position: absolute;
-    margin: 30px 60px;
+    margin: 20px 40px;
     left: 0;
 }
 .left-container,
 image {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 60px;
 }
 .image {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 285px;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 3px;
     position: relative;
     justify-content: center;
-    overflow: hidden;
-}
-.set1:nth-child(1) {
-    background-color: red;
-}
-.set3:nth-child(1) {
-    background-color: var(--primary);
+    overflow: hidden;''
 }
 
 .right-container {
-    width: 100%;
     position: absolute;
-    margin: 30px 30px;
+    margin: 20px -60px;
     left: 73%;
 }
 .right-container,
 image {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 60px;
+}
+.set1:nth-child(1) {
+    background-image: url("images/mid-atlantic-ridge.png");
+    background-position:top;
+    background-size: cover;
+
+}
+.set1:nth-child(3){
+    background-image: url("images/volcanic-seismic-zones.png");
+    background-position: center;
+    background-size: cover;
+}
+.set2:nth-child(1) {
+    background-image: url("images/volcanic-systems.png");
+    background-position: center;
+    background-size: cover;
+}
+.set2:nth-child(3) {
+    background-image: url("images/volcanoes-glaciers.png");
+    background-position: bottom;
+    background-size: cover;
+}
+.set3:nth-child(1) {
+    background-image: url("images/ice-caps.png");
+    background-position: center;
+    background-size: cover;
+}
+.set3:nth-child(3) {
+    background-image: url("images/meltwater.png");
+    background-position: center;
+    background-size: cover;
+}
+.set4:nth-child(1) {
+    background-image: url("images/plateau.png");
+    background-position: center;
+    background-size: cover;
 }
 
+.left-container p {
+    margin-top: -55px;
+    width: 400px;
+    font-size: 13px;
+    font-family: Georgia, "sans-serif";
+    font-weight: lighter;
+    color: var(--tertiary);
+}
+.right-container p {
+    left: 73%;
+    margin-top: -55px;
+    width: 400px;
+    font-size: 13px;
+    font-family: Georgia, "sans-serif";
+    font-weight: lighter;
+    color: var(--tertiary);
+}
+
+/*-----------------------------
+# images
+ -----------------------------*/
+.footer {
+    margin-left: 15px;
+    font-family: Futura, sans-serif;
+    color: var(--tertiary);
+}
+.footer a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: var(--tertiary);
+}
 
 #preloader {
     background: white url("images/preloader.gif") no-repeat center center;
