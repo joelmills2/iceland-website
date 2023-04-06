@@ -56,19 +56,4 @@
         window.addEventListener('load', toggleBacktotop)
         onscroll(document, toggleBacktotop)
     }
-    // let card1 = select('.card1')
-    // if(card1) {
-    //     const toggleCard1 = () => {
-    //         if (window.scrollY < 100) {
-    //             card1.classList.add('active')
-    //         } else {
-    //             card1.classList.remove('active')
-    //         }
-    //     }
-    //     window.addEventListener('load', toggleCard1)
-    //     onscroll(document, toggleCard1)
-    // }a
-
-
-
 })()

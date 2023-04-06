@@ -2,9 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary: #88BDBC;
+    --secondary: #734000;
+    --tertiary: #4F4A41;
+/* less white?*/
+}
+
 body {
-    background-color: #88BDBC;
-    /*background-image: url("images/sunrise.jpg");*/
+    background-color: var(--primary);
     overflow-x: hidden; /*remove horizontal scrolling*/
 }
 
@@ -19,7 +25,7 @@ body {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #734000;
+    background: var(--secondary);
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -51,7 +57,7 @@ body {
     width: 390px;
     font-size: 80px;
     line-height: 85px;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: bold;
 }
@@ -78,7 +84,7 @@ header a {
     left: 0;
     right: 0;
     position: relative;
-    color: #4F4A41;
+    color: var(--tertiary);
     text-decoration: none;
     text-align: center;
     font-size: 24px;
@@ -148,7 +154,7 @@ header a:hover {
 .card-title {
     position: absolute;
     font-size: 30px;
-    font-variant: all-petite-caps;
+    font-variant: all-small-caps;
     font-family: "Georgia", serif;
     font-weight: lighter;
     padding: -3em 0 0;
@@ -187,12 +193,10 @@ header a:hover {
     transform: scale(1.05) translateY(-1rem);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/mid-atlantic-ridge.jpg");
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-
 }
 .card:nth-child(2):hover {
     transform: scale(1.05) translateY(-1rem);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.2)) , url("images/volcano.avif");
-;
     box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .card:nth-child(3):hover {
@@ -240,22 +244,22 @@ section:nth-child(6) {
 # abstract section
  -----------------------------*/
 .abstract-title {
+    text-align: center;
     padding-top: 40px;
     padding-bottom: 10px;
-    text-align: center;
 }
 .abstract-title h2 {
     font-size: 30px;
     margin-bottom: 10px;
     padding-bottom: 5px;
     position: relative;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: bold;
 }
 .abstract-text {
     font-size: 20px;
-    margin-left: 200px;
+    margin-left: 235px;
     margin-right: 200px;
     padding-bottom: 20px;
     color: #4F4A41;
@@ -295,7 +299,7 @@ section:nth-child(6) {
 .terms-title h2 {
     font-size: 30px;
     position: relative;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: bold;
 }
@@ -312,7 +316,7 @@ section:nth-child(6) {
     margin-left: 60px;
     padding-bottom: 20px;
     padding-right: 40px;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: lighter;
     line-height: 22px;
@@ -325,7 +329,7 @@ section:nth-child(6) {
 .refs-title h2 {
     font-size: 30px;
     position: relative;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: bold;
 }
@@ -342,7 +346,7 @@ section:nth-child(6) {
     margin-left: 60px;
     padding-bottom: 20px;
     padding-right: 40px;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: lighter;
     line-height: 22px;
@@ -366,7 +370,7 @@ section:nth-child(6) {
     margin-bottom: 20px;
     padding-bottom: 5px;
     position: relative;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
     font-weight: bold;
 }
@@ -406,7 +410,7 @@ section:nth-child(6) {
     font-size: 15px;
     line-height: 30px;
     padding-bottom: 100px;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
 }
 .text-l p {
@@ -421,43 +425,53 @@ section:nth-child(6) {
     font-size: 15px;
     line-height: 30px;
     padding-bottom: 100px;
-    color: #4F4A41;
+    color: var(--tertiary);
     font-family: "Georgia", sans-serif;
 }
 
 /*-----------------------------
 # images
  -----------------------------*/
-.image-left {
-    display: flex;
+.left-container {
+    width: 100%;
     position: absolute;
-    height: 500px;
-    width: 150px;
-    flex-direction: column;
-    row-gap: 20px;
-    margin-left: 40px;
-    margin-top: 80px;
+    margin: 30px 60px;
+    left: 0;
 }
-.image-right {
+.left-container,
+image {
     display: flex;
-    position: absolute;
-    height: 500px;
-    width: 130px;
     flex-direction: column;
-    row-gap: 20px;
-    margin-left: 1050px;
-    margin-top: 80px;
+    row-gap: 30px;
 }
-.image-card {
-    height: 150px;
-    width: 280px;
-    background-color: grey;
+.image {
+    width: 300px;
+    height: 200px;
+    background-color: black;
     border-radius: 10px;
     position: relative;
-    justify-items: center;
+    justify-content: center;
     overflow: hidden;
 }
+.set1:nth-child(1) {
+    background-color: red;
+}
+.set3:nth-child(1) {
+    background-color: var(--primary);
+}
 
+.right-container {
+    width: 100%;
+    position: absolute;
+    margin: 30px 30px;
+    left: 73%;
+}
+.right-container,
+image {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
 
 
 #preloader {
