@@ -468,8 +468,9 @@ image {
 
 .right-container {
     position: absolute;
-    margin: 20px -60px;
-    left: 73%;
+    margin-top: 20px;
+    right: 0;
+    margin-right: 38px;
 }
 .right-container,
 image {
