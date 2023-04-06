@@ -1,4 +1,4 @@
-//cite BootstrapMade.com
+//function taken from BootstrapMade.com
 
 (function() {
     "use strict";
